@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Mont";
+  font-weight: bold;
+  src: url(../fonts/MontHeavy.otf) format("embedded-opentype"), url("../fonts/MontHeavy.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url(../fonts/MontLight.otf) format("embedded-opentype"), url("../fonts/MontLight.otf") format("truetype");
+}
+
+* {
+  background: #f3f4f5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mont';
+}
+
+main {
+  padding: 0 10rem;
+}
+
+main header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 90%;
+      grid-template-columns: 10% 90%;
+  grid-gap: 5rem;
+  padding: 3rem 0;
+}
+
+main header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main header .text h1 {
+  font-size: 6rem;
+  color: #05f;
+}
+
+main header .text p {
+  font-size: 1rem;
+  color: #100818;
+  font-weight: bolder;
+}
+
+.info {
+  padding: 1rem 0;
+}
+
+.info input {
+  width: 100%;
+  padding: .9rem 1rem;
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 20px 0px;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 20px 0px;
+}
+
+.info input:focus, .info input:active {
+  border: 2px solid #05f;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dropzone {
+  border: 2px dashed #05f;
+  border-radius: 10px;
+}
+
+.dropzone .dz-message {
+  background: #fff;
+  padding: 2rem 0;
+}
+/*# sourceMappingURL=styles.css.map */

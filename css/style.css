@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.verytop {
+    margin: 2rem 3rem 0rem;
+}
+
+/* hero side */
+
+.firstheader {
+    color: white;
+}
+
+.hero-side {
+    background: url('../images/internshippic.jpeg') no-repeat top left rgba(3, 79, 129, 0.6);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.tx {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.eligible-line {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #0F82D6;
+}
+
+/* 1st form side */
+.gray-container {
+    padding: 3rem 4rem;
+}
+
+.top-form-container {
+    background-color: white;
+}
+
+/* second form side */
+.white-container {
+    background-color: white;
+    padding: 2.5rem 4rem;
+
+}
+
+.bottom-form-container {
+    border: 1px solid gray;
+}
+
+
+/* form */
+.the-gray {
+    background-color: rgba(219, 219, 219, 0.19);
+
+}
+
+/* button */
+.btn-hundred {
+    width: 100%;
+}
+
+/* navigation */
+.logo-image {
+    width: 10%;
+}
+
+.nav li a {
+    color: black;
+}
+
+.bd-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.bd-footer-links {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.scroll-ball {
+    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    right: 1.5rem;
+    bottom: 10rem;
+    background: linear-gradient(to bottom right, rgba(169, 169, 170, 0.815), rgba(224, 224, 224, 0.911));
+    transition: all 300ms ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    padding: .5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: auto;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+    border: solid 1.2px rgba(110, 108, 108, 0.555);
+}
+
+.scroll-ball:hover {
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 600px) {
+    .gray-container {
+        padding: 2rem 0;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .gray-container {
+        padding: 2.5rem 1rem;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 567px) {
+    .bd-footer {
+        text-align: left;
+    }
+}
+
+/* dropzone */
+
+.dropzone {
+    border: 2px dashed #05f;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem .5rem;
+}
+
+.dropzone .dz-message {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+.hard-content {
+    position: absolute;
+    right: .5rem;
+    top: 0px;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.quick-response-code {
+    width:100px;
+    height: 100px;
+    // border: solid 1px #000;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    object-fit: fit;
+}
+
+.passport-photo {
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    object-fit: fit;
+    transform: scale(.70);
+    // border: solid 1px #444;
+}
+
+#report-container {
+    position: relative;
+    border: solid 1.8px rgba(219, 219, 219, 0.19);
+    border-radius: 36px;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+#documents_list li a {
+    text-decoration: none !important;
+    font-size: 20px;
+    font-weight: lighter;
+}
+#documents_list:nth-child(1) {
+    text-decoration: none !important;
+    font-size: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}

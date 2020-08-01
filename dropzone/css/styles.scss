@@ -1,0 +1,81 @@
+// Specify fonts
+@font-face {
+    font-family: "Mont";
+    font-weight: bold;
+    src: url(../fonts/MontHeavy.otf) format("embedded-opentype"),
+      url("../fonts/MontHeavy.otf") format("truetype");
+  }
+  
+@font-face {
+font-family: "Mont";
+src: url(../fonts/MontLight.otf) format("embedded-opentype"),
+    url("../fonts/MontLight.otf") format("truetype");
+}
+
+// Color
+$maincolor: #05f;
+$altcolor: #100818;
+
+*{
+    background: #f3f4f5;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mont';
+}
+
+main{
+    padding: 0 10rem;
+    header{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-gap: 5rem;
+        padding: 3rem 0;
+        //Logo
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        // Text
+        .text{
+            h1{
+                font-size: 6rem;
+                color: $maincolor;
+            }
+            p{
+                font-size: 1rem;
+                color: $altcolor;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+// Form
+.info{
+    input{
+        width: 100%;
+        padding: .9rem 1rem;
+        background: #fff;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 20px 0px;
+        &:focus, &:active{
+            border: 2px solid $maincolor;
+            box-shadow: none;
+        }
+    }
+    padding: 1rem 0;
+}
+
+.dropzone {
+    border: 2px dashed $maincolor;
+    border-radius: 10px;
+    // Dropzone message
+    .dz-message{
+        background: #fff;
+        padding: 2rem 0;
+    }
+}
