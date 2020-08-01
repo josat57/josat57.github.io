@@ -58,7 +58,7 @@ function addQualification(e) {
     let formData = new FormData(qualificationForm);
     formData.append('owner_id', window.localStorage.getItem('applicantId'));
     formData.append('action', 'qualifications');
-    let requestUrl = '../rsuth_api/index.php';
+    let requestUrl = 'https://rsuthinterns.000webhostapp.com/rsuth_api/index.php';
     $.ajax({
         url: requestUrl,
         type: 'POST',
@@ -85,7 +85,7 @@ function get_application_details(e) {
     e.preventDefault();
     
     $.blockUI({ message: '<h1><img src="images/busy.gif" style="width:100px; height:100px;"/> Just a moment...</h1>' });   
-    let requestUrl = '../rsuth_api/index.php';
+    let requestUrl = 'https://rsuthinterns.000webhostapp.com/rsuth_api/index.php';
     $.ajax({
         type: 'POST',
         url: requestUrl,
@@ -135,7 +135,7 @@ get_qualifications = function (e) {
     
     $.blockUI({ message: '<h1><img src="images/busy.gif" style="width:100px; height:100px;"/> Just a moment...</h1>' });
     
-    let requestUrl = '../rsuth_api/index.php';    
+    let requestUrl = 'https://rsuthinterns.000webhostapp.com/rsuth_api/index.php';    
     $.ajax({
         type: 'POST',
         url: requestUrl,
@@ -184,7 +184,7 @@ function get_documents(e) {
     
     $.blockUI({ message: '<h1><img src="images/busy.gif" style="width:100px; height:100px;"/> Just a moment...</h1>' });
     
-    let requestUrl = '../rsuth_api/index.php';
+    let requestUrl = 'https://rsuthinterns.000webhostapp.com/rsuth_api/index.php';
     $.ajax({
         type: 'POST',
         url: requestUrl,
@@ -228,7 +228,7 @@ function registerApplicant(e) {
     $.blockUI({ message: '<h1><img src="images/busy.gif" style="width:80px; height:80px;"/> Just a moment...</h1>' });
     let formData = new FormData(applicationForm);
     formData.append('action', 'applications');
-    let requestUrl = '../rsuth_api/index.php';
+    let requestUrl = 'https://rsuthinterns.000webhostapp.com/rsuth_api/index.php';
     $.ajax({
         url: requestUrl,
         type: 'POST',
@@ -263,7 +263,7 @@ $('#documentname').on('change', function(e){
 
 Dropzone.autoDiscover = false;
 $("#my-awesome-dropzone").dropzone({
-    url: "http://localhost/rsuth_interns_program/rsuth_api/index.php",
+    url: "https://rsuthinterns.000webhostapp.com/rsuth_api/index.php",
     action: "upload_documents",
     parallelUploads: 1,
     paramName: 'file',
