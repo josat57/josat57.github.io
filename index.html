@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/rsuthlogo.jpg" type="image/x-icon">
+    <title>RSUTH</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dropzone.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <a class="navbar-brand" href="#">
+            <img src="images/rsuthlogo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">RSUTH
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <button class="btn btn-sm btn-primary">Contact us</button>
+                    <!--                   <a class="nav-link btn btn-primary" href="#">Contact Us <span class="sr-only">(current)</span></a>-->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid hero-side mb-5">
+            <h1 class="display-4 text-center tx">RSUTH INTERNSHIP PROGRAM</h1>
+            <hr class="my-4">
+            <p class="lead text-center tx">
+                <a class="btn btn-primary btn-lg" href="#application-form" role="button" style="padding: .5rem 1.8rem;">Apply here</a>
+            </p>
+        </div>
+
+        <section class="mt-4">
+            <div class="eligibility-container ">
+                <div>
+                    <h4>Eligibility</h4>
+                    <hr class="my-4 eligible-line">
+                    <p class="pb-5">Candidates must be in possesion of a recognized university degree
+                        and a current temporary/practicing licence issued by the registration council.
+                    </p>
+                </div>
+            </div>
+
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0 btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <!-- <button class="btn font-large" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> -->
+                        Requirements
+                      <!-- </button> -->
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Candidates are required to attach all necessary credentials to their
+                            platform they include: </p>
+                        
+                        <ul class="ml-3">
+                            <li>Application letter(with phone number) addressed to
+                                The chief Medical director, Rivers State University Teachiing Hospital, 6-8 Harley Street,
+                                Old GRA, Port harcourt, Rivers State.</li>
+                            <li>Curriculum Vitae.</li>
+                            <li>Passport photograph (2 copies).</li>
+                            <li>Licence/registration.</li>
+                            <li>Degree certificate or Notification(statement) of results.</li>
+                            <li>Waec/O'level certificate.</li>
+                            <li>First school leaving certificate.</li>
+                            <li>L.G.A identification letter.</li>
+                            <li> Birth certificate/statutory declaration of age.</li>
+                            <li>letters from two(2) senior citizens.</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="mt-4">
+                <h4> </h4>
+                <hr class="my-4 eligible-line">
+                <div>
+                    <p>Candidates are required to attach all necessary credentials to their
+                        platform they include: </p>
+                    <ul class="ml-3">
+                        <li>Application letter(with phone number) addressed to
+                            The chief Medical director, Rivers State University Teachiing Hospital, 6-8 Harley Street,
+                            Old GRA, Port harcourt, Rivers State.</li>
+                        <li>Curriculum Vitae.</li>
+                        <li>Passport photograph (2 copies).</li>
+                        <li>Licence/registration.</li>
+                        <li>Degree certificate or Notification(statement) of results.</li>
+                        <li>Waec/O'level certificate.</li>
+                        <li>First school leaving certificate.</li>
+                        <li>L.G.A identification letter.</li>
+                        <li> Birth certificate/statutory declaration of age.</li>
+                        <li>letters from two(2) senior citizens.</li>
+                    </ul>
+                </div>
+            </div> -->
+        </section>
+    </div>
+    <div style="box-sizing: border-box; margin: 0; padding: 0;">
+        <!-- form section -->
+        <section class="form-container col-12" id="application-form" style="margin-top:10rem;">
+            <div class="gray-container the-gray col-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="top-form-container shadow p-3 col-8">
+                    <h4 class="p-3">Internship Application form</h4>
+                    <p class="px-3">Please see requirement details above before completing this Application</p>
+                    <form action="#" method="post" id="applicationForm" class="m-4 pb-4">
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="">First Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="" aria-required="true">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="" aria-required="true">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Other Names</label>
+                                <input type="text" class="form-control" name="othername" id="othername" placeholder="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="">Gender <span class="text-danger">*</span></label>
+                                <select class="custom-select mr-sm-2" name="gender" id="gender" aria-required="true">
+                                    <option selected>Choose...</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Date of Birth <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" name="dateofbirth" id="dateofbirth" placeholder="" aria-required="true">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">Marital Status <span class="text-danger">*</span></label>
+                                <select class="custom-select mr-sm-2" name="maritalstatus" id="maritalstatus" aria-required="true">
+                                    <option selected>Choose...</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Divorced">Divorced</option>
+                                    <option value="Widowed">Widowed</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="">Phone <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" name="mobilenumber" id="mobilenumber" placeholder="" aria-required="true">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="" aria-required="true">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">City</label>
+                                <input type="text" class="form-control" name="city" id="city" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Address <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="residentialaddress" id="residentialaddress" placeholder="" aria-required="true">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="">Nationality <span class="text-danger">*</span></label>
+                                <select class="custom-select mr-sm-2" name="nationality" id="nationality" aria-required="true">
+                                    <option selected>Choose...</option>
+                                    <option value="Nigeria">Nigerian</option>
+                                    <option value="Ghana">Ghana</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">State of origin <span class="text-danger">*</span></label>
+                                <select class="custom-select mr-sm-2" name="stateoforigin" id="stateoforigin" aria-required="true">
+                                    <option selected>Choose...</option>
+                                    <option value="Rivers">Rivers</option>
+                                    <option value="Delta">Delta</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="">LGA of origin <span class="text-danger">*</span></label>
+                                <select class="custom-select mr-sm-2" name="lgaoforigin" id="lgaoforigin" aria-required="true">
+                                    <option selected>Choose...</option>
+                                    <option value="Phalga">Phalga</option>
+                                    <option value="Ahoada">Ahoada</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" id="submitApplication" class="btn btn-lg btn-primary">Save</button>
+                    </form>
+                </div>
+
+                <div class="top-form-container shadow p-3 col-8" style="margin-top: 10rem; height: 100vh;" id="qualification-section">
+                    <h4 class="p-3">Qualifications</h4>                    
+                    <form action="#" method="post" id="qualificationForm" class="m-4">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="">Basic Qualification</label>
+                                <input type="text" class="form-control" name="qualification_level" id="qualification_level" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Certificate</label>
+                                <input type="text" class="form-control" name="qualification_obtained" id="qualification_obtained" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Institution</label>
+                                <input type="text" class="form-control" name="institution" id="institution" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Date</label>
+                                <input type="date" class="form-control" name="date_obtained" id="date_obtained" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="">Additional Qualification</label>
+                                <input type="text" class="form-control" name="additional_qualification_level" id="additional_qualification_level" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Certificate</label>
+                                <input type="text" class="form-control" name="additional_qualification_obtained" id="additional_qualification_obtained" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Institution</label>
+                                <input type="text" class="form-control" name="additional_institution" id="additional_institution" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Date</label>
+                                <input type="date" class="form-control" name="additional_date_obtained" id="additional_date_obtained" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="">Role</label>
+                                <select class="custom-select mr-sm-2" name="role" id="role">
+                                    <option selected>Choose...</option>
+                                    <option value="House officer">House officer</option>
+                                    <option value="Pharmacist">Pharmacist</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="">Licence/Registration Number</label>
+                                <input type="text" class="form-control" name="licence_registration_number" id="licence_registration_number" placeholder="">
+                            </div>
+                        </div>
+                        
+                        <button type="button" id="submitQualification" class="btn btn-lg btn-primary">Save</button>
+                    </form>
+                </div>
+
+                <div class="top-form-container shadow p-3 col-8" style="margin-top: 10rem; height: 100vh;" id="upload-section">
+                    <h4 class="p-3">Upload Documents</h4>                   
+                    <form action="#" method="post" class="m-4" enctype="multipart/form-data">                        
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="">Select Document</label>
+                                <select name="documentname" class="custom-select mr-sm-2" id="documentname">
+                                    <option selected>Choose...</option>
+                                    <option>application letter</option>
+                                    <option>Curiculum Vitae</option>
+                                    <option>Passport photograph</option>
+                                    <option>Licence/registration.</option>
+                                    <option>Degree certificate</option>
+                                    <option value="">Statement results</option>
+                                    <option>O'level certificate.</option>
+                                    <option>First school leaving certificate.</option>
+                                    <option>L.G.A identification letter.</option>
+                                    <option>Birth certificate/statutory declaration of age.</option>
+                                    <option value="">statutory declaration of age</option>
+                                    <option>Referee letter1</option>
+                                    <option>Referee letter2</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12" style="text-align: center;">
+                                <div class="dropzone" action="/file-upload"  id="my-awesome-dropzone" style="height: 25rem; justify-content: center; align-items: center;">
+                                    <div class="dz-message" id="uploadvcenter d-flex" style="justify-content: center; align-items: center;" >
+                                        <div>
+                                            <h4 style="color: grey;">Drop files here or click to upload.</h4>
+                                            <div class="text-muted">(Only .jpg and .pdf files can be uploaded here Max. 3mb)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="finishApplication" class="btn btn-lg btn-success" data-toggle="modal" data-target="previewModal">FInish</button>
+                    </form>
+                </div>    
+            </div>
+        </section>
+    <div class="scroll-ball rounded-circle">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+    </div>
+    <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="previewTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title text-secondary" id="previewTitle">
+                    <img src="images/rsuthlogo.jpg" width="50px" height="50px" alt="rsuth logo">
+                    RSUTH
+                </h6>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">   
+                <div class="row mb-4" style="margin: 0.8rem; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <h4 class="text-secondary font-weight-light">Rivers State University Teaching Hospital</h4>
+                    <h5 class="text-secondary font-weight-light">Internship program <span class="pyear"></span></h5>
+                </div>            
+                <h5 class="text-muted font-weight-bold pl-2 mb-4 ml-4  text-decoration-underline" id="apptitle">Intern Information</h5>
+                <div class="col-md-12" id="report-container">
+                    <div class="hard-content col-4">
+                        <img src="#" class="img d-flex passport-photo" alt="Intern Passport Photograph" />
+                        <div class="quick-response-code" id="qrcode"> </div>
+                    </div>
+                    
+                </div>
+                <hr class="my-4 eligible-line border border-secondary">
+                <div class="col-md-12" id="qualifications_container">
+
+                </div>
+                <hr class="my-4 eligible-line border border-secondary">
+                <div class="col-md-12" id="documents">
+                    <u class="list-group" id="documents_list">
+                        <li class="list-group-item active">Uploaded Documents</li>
+                    </u>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <footer class="bd-footer text-muted">
+        <div class="container">
+            <ul class="bd-footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="/about/history/">About</a></li>
+            </ul>
+            <p>For further enquiry call:0815-149-1555 or email: info@rsuth.ng</p>
+        </div>
+    </footer>
+
+    <script src="js/jQuery-v3.5.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/dropzone.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/jQuery.MsgBox-master/jquery.msgbox.min.js"></script>
+    <script src="js/jQueryBlockUI/jqueryblockui.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="js/qrcode.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/variables.js"></script>
+ 
+</body>
+
+</html>
